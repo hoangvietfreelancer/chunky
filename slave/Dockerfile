@@ -1,4 +1,4 @@
-FROM openjdk
+FROM zulu-openjdk
 COPY rootfs /
 
 WORKDIR /
