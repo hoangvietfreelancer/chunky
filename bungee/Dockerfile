@@ -1,4 +1,4 @@
-FROM openjdk
+FROM azul/zulu-openjdk
 COPY rootfs /
 
 WORKDIR /
