@@ -1,5 +1,5 @@
 forge_support: false
-player_limit: 1000
+player_limit: -1
 permissions:
   default:
   - bungeecord.command.server
@@ -24,7 +24,7 @@ listeners:
   ping_passthrough: false
   bind_local_address: true
   host: 0.0.0.0:4444
-  max_players: 1
+  max_players: 1000
   tab_size: 60
   force_default_server: false
 ip_forward: true
