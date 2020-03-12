@@ -1,0 +1,57 @@
+# ----- CustomItems (NBTEditor) ----- Item configuration file -----
+# 
+# Note regarding allowed-worlds/blocked-worlds:
+#   allowed-worlds, when not empty, acts like a whitelist and only
+#   on worlds from this list the item will be enabled!
+
+custom-items:
+  bos-empty:
+    enabled: true
+    name: §aBook of Souls§r - §cEmpty
+    lore:
+    - §bThis is a empty Book of Souls.
+    - §bRight-click an entity to capture the soul.
+    allowed-worlds: []
+    blocked-worlds: []
+  bos:
+    enabled: true
+    name: §bBook of Souls
+    lore: []
+    allowed-worlds: []
+    blocked-worlds: []
+  entity-inspector:
+    enabled: true
+    name: §bEntity Inspector
+    lore:
+    - §eRight-click an entity to get their information.
+    allowed-worlds: []
+    blocked-worlds: []
+  entity-remover:
+    enabled: true
+    name: §bEntity Remover
+    lore:
+    - §eRight-click an entity to remove it.
+    - §eRight-click while sneeking to remove
+    - §eall entities in a 3 block radius.
+    allowed-worlds: []
+    blocked-worlds: []
+    radius: 3
+  super-lead:
+    enabled: true
+    name: §6Super Lead
+    lore:
+    - §eRight-click an entity to tie it.
+    - §eThen right-click another entity
+    - §ewhile sneaking to tie them together.
+    allowed-worlds: []
+    blocked-worlds: []
+  tropical-generator:
+    enabled: true
+    name: §bTropical Fish Generator
+    lore:
+    - §eLeft-click to spawn tropical fish at the cursor position.
+    - §eRight-click to spawn tropical fish here.
+    allowed-worlds: []
+    blocked-worlds: []
+    count: 10
+    drop-items: true

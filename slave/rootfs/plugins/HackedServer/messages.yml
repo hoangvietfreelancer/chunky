@@ -1,0 +1,54 @@
+Commands:
+
+  Help:
+  - "&8&m-------------------&f %Prefix%&8&m-------------------"
+  - "                           &a/hs check &7<&aplayer&7>"
+  - "         &8»  &7shows the versions of the specified player"
+  - "                                  &a/hs list"
+  - "           &8»  &7shows the connected chocolate's users"
+  - "                                   &a/hs inv"
+  - "                &8»  &7open HackedServer's inventory"
+  - "                               &a/hs forge inv"
+  - "             &8»  &7open HackedServer's forge inventory"
+  - "                               &a/hs forge list"
+  - "               &8»  &7shows the connected forge's users"
+  - "                        &a/hs forge check &7<&aplayer&7>"
+  - "            &8»  &7shows the mods of the specified player"
+  - "&8&m----------------------------------------------------"
+
+  NotPlayerInventoryViewer:
+  - "&cYou are not a player so you can't see inventories!"
+
+  Check:
+    NotUsingForge:
+    - "%Prefix%&aThe specified player does not use forge!"
+
+  List:
+    NoChocolateUsers:
+    - "%Prefix%&aAll players are currently using vanilla!"
+    Format:
+    - "%Prefix%&7Chocolate's users &8»&7"
+
+  ForgeList:
+    NoForgeUsers:
+    - "%Prefix%&aNo player is currently using forge!"
+    Format:
+    - "%Prefix%&7Forge's users &8»&7"
+
+  Version:
+  - "%Prefix%&8» &7%p% is using %version%"
+
+  Reload:
+  - "%Prefix%&8» &aHackedServer has been reloaded"
+
+  MissingDependencies:
+  - "%Prefix%&cYou need ViaVersion or ProtocolSupport to get player's version"
+
+  PlayerError:
+  - "%Prefix%&cThe specified player does not exist or is not logged in !"
+
+  NoPermissionError:
+  - "%Prefix%&cYou don't have permission to do that"
+
+  Unknown-command:
+  - "Unknown command. Type \"/help\" for help."

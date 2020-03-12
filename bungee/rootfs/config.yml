@@ -1,5 +1,5 @@
 forge_support: false
-player_limit: -1
+player_limit: 1000
 permissions:
   default:
   - bungeecord.command.server

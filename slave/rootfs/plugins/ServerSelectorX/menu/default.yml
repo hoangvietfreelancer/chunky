@@ -1,0 +1,104 @@
+# https://github.com/ServerSelectorX/ServerSelectorX/wiki/Free-%7C-Server-Pinging
+# https://github.com/ServerSelectorX/ServerSelectorX/wiki/Actions
+# Placeholders not working? https://github.com/ServerSelectorX/ServerSelectorX/wiki/FAQ#placeholders-are-not-working
+
+# Number of rows of slots of your server selector menu. For example '2' will mean 2*9 = 18 slots. Max value is 6.
+rows: 2
+
+# This will be displayed as the title of the menu. You cannot have multiple menus with the same title!
+title: 'Hãy chọn server'
+
+# This will be the name of the server selector item
+item-name: 'Chọn server'
+
+# Item lore. For no lore, put 'none' in the first line.
+item-lore:
+- 'Dùng để kết nối vào các server phụ'
+
+# The name of the server selector item. Specify "NONE" for no item.
+item: COMPASS
+data: 0
+
+# Give the item when a player joins?
+on-join: true
+
+# What slot should the item be in? Specify -1 to automatically put it in the first available slot.
+inv-slot: 8
+
+# URL clickable message
+url-message: '&3&lBấm vào đây'
+
+# Command to open the menu. Specify "none" for no command. (without /)
+command: "menu"
+
+# https://github.com/ServerSelectorX/ServerSelectorX/wiki/Free-%7C-Items-in-the-server-selector
+menu:
+  
+  2:
+    ping-server: true
+    ip: viet1.ddns.net
+    port: 25565
+    action: 'srv:lobby'
+    change-item-count: true
+    item-count: 1
+    online:
+      item: DIAMOND_SWORD
+      data: 0
+      name: '&aLobby'
+      lore:
+       - 'Đang có {online} trên tổng số {max} người đang online.'
+    offline:
+      item: WOOD_SWORD
+      data: 0
+      name: '&cLobby'
+      lore:
+       - Server đang không hoạt động
+  4:
+    ping-server: true
+    ip: viet1.ddns.net
+    port: 25566
+    
+    # https://github.com/ServerSelectorX/ServerSelectorX/wiki/Actions
+    action: 'srv:creative'
+
+    # Change item count based on number of players online. Only works if server pinging is set up. 
+    # If there are more than 64 players online, the item count will be 1. Change how this works in config.yml.
+    change-item-count: true
+    
+    # This value is ignored when change-item-count is turned on.
+    item-count: 1
+
+    # Online is used when ping-server is turned off, or ping-server is turned on and the server is online.
+    online:
+      item: DIAMOND_SWORD
+      data: 0
+      name: '&aCreative Server'
+      lore:
+      # Placeholders not working? https://github.com/ServerSelectorX/ServerSelectorX/wiki/FAQ#placeholders-are-not-working
+       - 'Đang có {online} trên tổng số {max} người đang online.'
+      
+    # Offline is used when ping-server is turned on and the server is offline.
+    offline:
+      item: WOOD_SWORD
+      data: 0
+      name: '&cTest Server'
+      lore:
+       - Server đang không hoạt động
+  6: # Item in 6th slot
+    # https://github.com/ServerSelectorX/ServerSelectorX/wiki/Actions   
+    action: 'none'
+    online:
+      item: 'head:auto' # You can use head:auto to get the head of the player opening the menu, or head:SomethingElse to get the head of a specific player.
+      data: 0
+      name: 'Đây là bạn!'
+      lore:
+       - Item này không có tác dụng gì cả :)))))
+       
+  -1: # -1 means everything else
+    # https://github.com/ServerSelectorX/ServerSelectorX/wiki/Actions
+    action: 'none'
+    online:
+      item: STAINED_GLASS_PANE
+      data: 0
+      name: ''
+      lore:

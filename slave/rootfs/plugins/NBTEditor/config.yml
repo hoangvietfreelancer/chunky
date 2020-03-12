@@ -1,0 +1,7 @@
+# The CustomItemsAPI was a standalone plugin that was merged into the NBTEditor 2.0
+# More information at http://dev.bukkit.org/bukkit-plugins/customitems/
+customitems:
+  # Enable the /customitem (/citem) command
+  enable-command: true
+  # Enable all the custom items (bows, bombs, etc.)
+  enable-items: false

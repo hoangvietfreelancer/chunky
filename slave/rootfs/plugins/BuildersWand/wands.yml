@@ -1,0 +1,27 @@
+wands:
+  '1':
+    name: '&3Builders Wand'
+    material: BLAZE_ROD
+    maxSize: 8
+    consumeItems: true
+    durability:
+      amount: 130
+      enabled: true
+      text: '&5Durability: &e{durability}'
+    crafting:
+      enabled: true
+      shapeless: false
+      recipe:
+      - xxd
+      - xbx
+      - bxx
+      ingredient:
+        d: DIAMOND
+        b: BLAZE_ROD
+    particles:
+      enabled: true
+      type: FLAME
+      count: 3
+    storage:
+      enabled: true
+      size: 27
