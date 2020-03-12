@@ -115,7 +115,7 @@ public class StateHandler {
                     playerChunkMap.put(myPlayer.getUniqueId().toString(), chunkIdx);
                 }
             }
-            NMSServer.getChunkProviderServer().saveChunk(((CraftChunk) chunk).getHandle(), false);
+            NMSServer.getChunkProviderServer().saveChunk(((CraftChunk) chunk).getHandle());
 //            System.out.println(String.format("I flushed %d, %d", chunk.getX(), chunk.getZ()));
         }
         NMSServer.getChunkProviderServer().c();

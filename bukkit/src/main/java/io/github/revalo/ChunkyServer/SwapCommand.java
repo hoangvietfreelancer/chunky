@@ -30,7 +30,7 @@ public class SwapCommand implements CommandExecutor {
             player.sendMessage("You called chunky! Swapping!");
 
             Chunk chunk = player.getLocation().getChunk();
-            ((CraftWorld) player.getWorld()).getHandle().getChunkProviderServer().saveChunk(((CraftChunk) chunk).getHandle(), false);
+            ((CraftWorld) player.getWorld()).getHandle().getChunkProviderServer().saveChunk(((CraftChunk) chunk).getHandle());
 
             sendStateToProxy(player);
         }

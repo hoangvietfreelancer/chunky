@@ -33,7 +33,7 @@ public class FlusherCommand implements CommandExecutor {
 
             if (args[0].equals("flush")) {
                 Chunk chunk = player.getLocation().getChunk();
-                ((CraftWorld) player.getWorld()).getHandle().getChunkProviderServer().saveChunk(((CraftChunk) chunk).getHandle(), false);
+                ((CraftWorld) player.getWorld()).getHandle().getChunkProviderServer().saveChunk(((CraftChunk) chunk).getHandle());
             } else if(args[0].equals("load")) {
                 RegionFileCache.a();
                 Chunk chunk = player.getLocation().getChunk();
