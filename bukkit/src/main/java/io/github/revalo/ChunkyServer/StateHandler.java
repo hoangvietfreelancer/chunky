@@ -1,14 +1,14 @@
 package io.github.revalo.ChunkyServer;
 
-import net.minecraft.server.v1_12_R1.ChunkSection;
-import net.minecraft.server.v1_12_R1.RegionFileCache;
-import net.minecraft.server.v1_12_R1.WorldServer;
+import net.minecraft.server.v1_10_R1.ChunkSection;
+import net.minecraft.server.v1_10_R1.RegionFileCache;
+import net.minecraft.server.v1_10_R1.WorldServer;
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.World;
-import org.bukkit.craftbukkit.v1_12_R1.CraftChunk;
-import org.bukkit.craftbukkit.v1_12_R1.CraftWorld;
+import org.bukkit.craftbukkit.v1_10_R1.CraftChunk;
+import org.bukkit.craftbukkit.v1_10_R1.CraftWorld;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.json.simple.JSONObject;
@@ -139,8 +139,8 @@ public class StateHandler {
         for (List<Number> chunkIdx : chunks) {
             Chunk chunk = world.getChunkAt(chunkIdx.get(0).intValue(), chunkIdx.get(1).intValue());
 
-            net.minecraft.server.v1_12_R1.Chunk NMSChunk = NMSServer.getChunkProviderServer().loadChunk(chunk.getX(), chunk.getZ());
-            net.minecraft.server.v1_12_R1.Chunk PlayerChunk = ((CraftChunk) chunk).getHandle();
+            net.minecraft.server.v1_10_R1.Chunk NMSChunk = NMSServer.getChunkProviderServer().loadChunk(chunk.getX(), chunk.getZ());
+            net.minecraft.server.v1_10_R1.Chunk PlayerChunk = ((CraftChunk) chunk).getHandle();
             ChunkSection[] sections = NMSChunk.getSections();
             if (sections != null) {
                 PlayerChunk.a(NMSChunk.getSections());
